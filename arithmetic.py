@@ -73,4 +73,3 @@ while time.time() < max_time:
     score += 1
     
 print(f"score: {score}")
-
