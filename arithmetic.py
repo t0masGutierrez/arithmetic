@@ -64,10 +64,10 @@ while time.time() < max_time:
         # division solution
         soln = num1 // num2
     
-    # check input against solution
-    usr = input(f"{num1} {op} {num2} = ")
-    while usr != str(soln):
-        usr = input(f"{num1} {op} {num2} = ")
+    # check answer against solution
+    answer = input(f"{num1} {op} {num2} = ")
+    while answer != str(soln):
+        answer = input(f"{num1} {op} {num2} = ")
     
     # update score
     score += 1
