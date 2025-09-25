@@ -1,5 +1,6 @@
 import random
 import time
+import matplotlib.pyplot as plt
 
 # operations
 ops = ["+", "-", "×", "÷"]
@@ -66,7 +67,7 @@ while time.time() < max_time:
     
     # check answer against solution
     answer = input(f"{num1} {op} {num2} = ")
-    while answer != str(soln):
+    while answer != str(soln) and (time.time() < max_time):
         answer = input(f"{num1} {op} {num2} = ")
     
     # update score
