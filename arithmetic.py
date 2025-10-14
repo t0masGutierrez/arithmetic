@@ -3,7 +3,7 @@ import time
 
 def play_game():
     # operations
-    ops = ["+", "-", "*", "/"]
+    ops = ["/", "+", "-", "*"]
 
     # time duration
     seconds = input("time (s): ")
