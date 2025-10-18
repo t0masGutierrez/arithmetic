@@ -75,7 +75,6 @@ def play_game():
             score += 1
         
     print(f"score: {score}")
-    return None
 
 def main():
     play_game()
