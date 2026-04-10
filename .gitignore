@@ -1,0 +1,15 @@
+# python
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# frontend build/deps
+webapp/frontend/node_modules/
+webapp/dist/
+
+# local app data
+webapp/data/*.db
+
+# macos
+.DS_Store
