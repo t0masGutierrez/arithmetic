@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
 import {
   DEFAULT_SETTINGS,
@@ -44,15 +44,10 @@ function App() {
 
   const deadlineRef = useRef(null);
   const inputRef = useRef(null);
-  const scoreRef = useRef(0);
   const activeConfigRef = useRef(null);
   const finishingRef = useRef(false);
 
   const selectedOps = useMemo(() => new Set(settings.ops), [settings.ops]);
-
-  useEffect(() => {
-    scoreRef.current = score;
-  }, [score]);
 
   useEffect(() => {
     activeConfigRef.current = activeConfig;
@@ -187,7 +182,7 @@ function App() {
   return phase === "settings" ? (
     <div id="welcome-wrap">
       <div id="welcome">
-        <h1>Arithmetic Game</h1>
+        <h1>Settings</h1>
 
         <dl>
           <dt>
